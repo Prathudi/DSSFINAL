@@ -1,0 +1,45 @@
+file -> new project -> java web -> web application (on right) --> next click
+projet name --> ASS7 --> other keep as it is --> check folder location --> next click
+glassfish server-> java EE 7 web -> next click  the click finish without any changes
+
+now go to file section ke below
+ASS7 -> right click on new -> web service
+name the web service --> MyCalcWebService --> package name --> com.myservice
+--> create web feom scratch --> finish
+now you will see new folder in left as web service 
+and below that MyCalcWebService --> hello: string
+now to to string file and open it
+delete the " This is sample web service operation" part from code
+now MyCalcWebService --> add operations --> addition --> return type will be double
+parameters --> num1 , num2 --> click ok 
+go to source file in right side and go to addition function and in last line type return num1+num2;
+save it then
+right click of ASS7 and click on --> build
+if o/p window if not showing go to win dows and --> o/p 
+right click of ASS7 and click on --> deploy 
+web service -> MyCalcWebService -> test service
+ui will open give inputs and enter will give addition
+
+
+now new web service for client 
+files-> new project same process as before
+CalcWebServiceClient -> create and finish 
+windows -> ide tools -> palette 
+now index.html file will be there for client 
+create a form in boddy and drag text input and drop and give name as below-->
+CalcServlet --> put it as get
+inside form -->
+Enter Number-1:<input type= "text" name= "number1" value=" "/><br>
+Enter Number-1:<input type= "text" name= "number1" value=" "/><br>
+
+<input type="submit" value="Submit"/>
+
+above give title name --> <title>Calculator web service client<title/> now save 
+
+go to -> CalcWebServiceClient --> right click-> new -> web service client--> 
+project browse select-> MyCalcWebService -> ok -> package -> default -> finish 
+
+CalcWebServiceClient --> right click-> new -> servlet -> next -> add in formation to deployment descriptor -> click tick on it
+finish 
+MyCalcWebService  --> u will see addition operation 
+drag this method and add it before last } in CalcServlet file coz its output file 
